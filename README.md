@@ -15,11 +15,11 @@ This overrides the application.properties present in the jar. With this only the
 ### 3. Using YAML configuration files<br>
 YAML is yet another way of writing configuration parameters. It is a key value pair and used nesting. Instead of writing a.b.c.d  and a.b.e.f format for all the parameters, it will take the format: <br>
 a: <br>
- b: <br>
-  c: <br>
-   d: <br>
-  e: <br>
-   f: <br>
+&nbsp;b: <br>
+&nbsp;&nbsp;c: <br>
+&nbsp;&nbsp;&nbsp;d: <br>
+&nbsp;&nbsp;e: <br>
+&nbsp;&nbsp;&nbsp;f: <br>
 it would be helpful if there are a lot of parameters to set. But this can be either part of project or added to the jar file and hence dont meet all the goals <br>
 <br>
 <br>
