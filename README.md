@@ -21,10 +21,24 @@ a: <br>
 &nbsp;&nbsp;e: <br>
 &nbsp;&nbsp;&nbsp;f: <br>
 it would be helpful if there are a lot of parameters to set. But this can be either part of project or added to the jar file and hence dont meet all the goals <br>
-<br>
-<br>
-<br>
-<br>
+### 4. Using spring profile <br>
+The spring profile in this project is application-test.yml. it resides in the same folder as default profile file application.yml <br>
+The spring profile naming format is <br>
+application-<profile name>.extn <br>
+An configuration parameter spring.profile.active=test is set in the application.yml, so that it overrides the values of the parameters. <br>
+FOr multiple environments, multiple yml files can be created and corresponding profile name can be passed as command line argument while execution <br>
+ex: java -jar project.jar --spring.profiles.active=prod, for this to work there should be a config file with name application-prod.yml <br>
+An annotation @Profile("profile name") can be used on beans to instantiate corresponding beans<br>
+Ex:<br>
+  @Repository <br>
+  @Profile("prod") <br>
+  public class DataSourceBean { <br>
+  <br>
+  <br>
+ @Repository <br>
+  @Profile("dev") <br>
+  public class DataSourceBean { <br>
+If no profile is set, by default all the beans are instantiated.<br>
 <br>
 <br>
 <br>
