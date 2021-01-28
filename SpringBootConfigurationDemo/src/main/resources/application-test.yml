@@ -5,9 +5,9 @@ my:
 myKeyValuePairs: {Red:'123', Green:'456', Blue: '789'}
 
 db:
- connection: http://_____
+ connection: http://test_____
  host: 127.0.0.1
- port: 1200
+ port: 2400
 
 management.endpoints.web.exposure.include: "*"
-spring.profiles.active: test
+
