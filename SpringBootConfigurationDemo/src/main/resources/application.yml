@@ -1,0 +1,16 @@
+my:
+ greeting: Hello world
+ list:
+  values: one,two,three
+myKeyValuePairs: {Red:'123', Green:'456', Blue: '789'}
+
+db:
+ connection: http://_____
+ host: 127.0.0.1
+ port: 1200
+
+management:
+ endpoints:
+  web:
+   exposure:
+    include: "*"
